@@ -32,7 +32,7 @@ for i in range(4):
 fig, axs = plt.subplots(2, 2, figsize=(8, 6), layout="constrained")
 # Top-left plot
 axs[0, 0].plot(cum_steps[0], mean_returns[0], 'tab:blue')
-axs[0, 0].set_title('Highway-v0')
+axs[0, 0].set_title('Highway-v')
 axs[0, 0].set_xlabel('Cumulative Environment Steps')
 axs[0, 0].set_ylabel('Mean Episode Return')
 axs[0, 0].grid(True)

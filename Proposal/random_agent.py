@@ -5,6 +5,8 @@ from gymnasium.wrappers import TimeLimit
 
 env_names = ["highway-v0", "merge-v0", "intersection-v0", "roundabout-v0"]
 
+print(highway_env.__file__)
+
 for i in range(4):
 
     env = gym.make(env_names[i]) # Will take a minute or so to run.

@@ -13,7 +13,7 @@ Usage:
       --dqn_dir  ./tensorboard/hmri_dqn/dqn_1 \
       --rand_dir ./tensorboard/hmri_random \
       --out_dir  ./plots \
-      --smooth   20
+      --smooth   30
 
 Requirements:
   pip install tensorboard matplotlib scipy numpy
@@ -229,7 +229,7 @@ def fig_distance(data, out_dir, smooth_w):
             color="black",
             linestyle="--",
             linewidth=1.2,
-            label="Total Distance/Length of Environment Segment")
+            label="Start to End Displacement for Each Environment Segment")
             )
 
     fig.legend(handles=handles, loc="lower center", ncol=3,

@@ -42,6 +42,7 @@ obs, info = env.reset()
 frames = []
 
 for _ in range(150):
+    # action = env.action_space.sample()
     action = 1
     obs, reward, done, truncated, info = env.step(action)
     frame = env.render()
